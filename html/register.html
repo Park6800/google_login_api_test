@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="484985241305-sua8h7omenha9mp9ea4jj4ivuj34m04b.apps.googleusercontent.com">
+    <script src=""></script>
+</head>
+
+<body>
+    <div class="back">
+        <div class="container">
+            <div class="left">
+                <div class="form">
+                    <img src="/img/cooltext431584397844072.png" class="register_logo" width="200px">
+                </div>
+                <div class="input_info">
+                    <div class="reg_acc">
+                        Mugu 계정 만들기
+                    </div>
+                    <div class="in_name">
+                        <div class="input_tit_frist">성<div class="f_n"><input type="text" placeholder="성"></div>
+                        </div>
+                        <div class="input_tit_name">이름<div class="l_n"><input type="text" placeholder="이름"></div>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="input_email">이메일</div>
+                        <div class="email_chk">
+                            <input type="text" placeholder="문자 숫자 @ 문자 숫자">
+                        </div>
+                    </div>
+                    <div class="in_name">
+                        <div class="input_tit_frist">비밀번호<div class="f_n"><input type="password" placeholder="성" maxlength="20"></div>
+                        </div>
+                        <div class="input_tit_name">비밀번호 확인<div class="l_n"><input type="password" placeholder="이름" maxlength="20"></div>
+                        </div>
+                    </div>
+                    <div class="pw_checking">
+                        <span><input type="checkbox" onclick="pw_open()">비밀번호 표시</span>
+                        <button class="next">다음</button>
+                    </div>
+                    <hr>
+                    <div class="login_type">
+                        <div class="g-signin2" data-onsuccess="onSignIn" style="width: 100%;"></div>
+                        <button class="Kakao">카카오 가입</button><br>
+                        <button class="Naver">네이버 가입</button><br>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="rotate">
+                    <img src="/img/cooltext431584397844072.png" class="login_logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+
+</html>

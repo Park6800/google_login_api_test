@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    background:linear-gradient( 45deg, skyblue, #fff);
+}
+.container{
+    padding-top: 130px;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.left{
+    background: #fff;
+    width: 70%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+.right{
+    background: #e3e3e3;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.input_info{
+    margin: 40px;
+}
+
+.in_name{
+    margin: 10px 10px 10px 0;
+    display: flex;
+}
+.in_name input {
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.f_n{
+    margin: 10px 0;
+}
+.l_n{
+    margin: 10px;
+}
+
+.reg_acc{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.email_chk input{
+    margin: 10px 0;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    width: 395px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form{
+    width: 440px;
+    margin: 20px;
+    padding-top: 12 0px;
+    display: flex;
+}
+
+.register_logo{
+    float: left;
+}
+
+.right{
+    width: 30%;
+    background: skyblue;
+    opacity: 0.5;
+}
+.rotate{
+    font-size: 50px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.login_logo{
+    transform:rotate(10deg);
+}
+
+.pw_checking{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.next{
+    background: powderblue;
+    border: 0;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 13px;
+}
+
+.Google, .Kakao, .Naver{
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.abcRioButton{
+    width: 100% !important;
+}
+
+.Google{
+    background: #fff;
+}
+
+.Kakao {
+    background: yellow;
+}
+
+.Naver {
+    background: green;
+}

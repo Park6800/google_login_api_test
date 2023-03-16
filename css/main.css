@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    background:linear-gradient( 45deg, skyblue, #fff);
+}
+.container{
+    padding-top: 130px;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.left{
+    padding-top: 90px;
+    background: #fff;
+    width: 70%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+.right{
+    background: #e3e3e3;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+.form{
+    width: 440px;
+    margin: 0 auto;
+    padding-top: 12 0px;
+}
+label{
+    font-size: 12px;
+    font-weight: 700;
+    color: gray;
+    
+}
+.form input[type=text]{
+    margin-bottom: 20px;
+    width: 100%;height: 40px;
+    border-radius: 10px;
+    border: 0.3px solid #888;
+}
+.form .login{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, skyblue, #fff);
+}
+.form a{
+    text-decoration: none;
+    color: #444;
+    font-size: 13px;
+}
+.ex{
+    width: 100%;
+    height: 30px;
+}
+.form button{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 0.5px solid #888;
+}
+#naver{
+    background: #22b14c;
+    color: #fff;
+}
+#kakao{
+    background: #fae100;
+}
+.right{
+    width: 30%;
+    background: skyblue;
+
+    opacity: 0.5;
+}
+.rotate{
+    font-size: 50px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.login_logo{
+    
+    transform:rotate(10deg);
+}
+
